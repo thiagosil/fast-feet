@@ -18,7 +18,7 @@ routes.use(authMiddleware);
 routes.post('/recipients', RecipientController.create);
 routes.put('/recipients/:recipientId', RecipientController.update);
 
-routes.post('/deliveryman', DeliverymanController.create);
+// routes.post('/deliveryman', DeliverymanController.create);
 
 routes.post('/files', upload.single('file'), FileController.store);
 module.exports = routes;
